@@ -1,0 +1,459 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Privacy Policy</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=DM+Sans:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      :root {
+        --ink: #1a1814;
+        --ink-mid: #4a4640;
+        --ink-light: #7a7570;
+        --rule: #d8d4ce;
+        --bg: #faf8f5;
+        --accent: #2d5a3d;
+        --accent-light: #e8f0ea;
+      }
+
+      html {
+        font-size: 16px;
+      }
+
+      body {
+        font-family: "DM Sans", sans-serif;
+        font-weight: 300;
+        background: var(--bg);
+        color: var(--ink);
+        line-height: 1.8;
+        padding: 0 1.5rem;
+      }
+
+      .page {
+        max-width: 680px;
+        margin: 0 auto;
+        padding: 5rem 0 6rem;
+      }
+
+      header {
+        border-bottom: 1px solid var(--ink);
+        padding-bottom: 2rem;
+        margin-bottom: 3rem;
+      }
+
+      .label {
+        font-size: 0.7rem;
+        font-weight: 500;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: var(--ink-light);
+        margin-bottom: 1.2rem;
+      }
+
+      h1 {
+        font-family: "Playfair Display", Georgia, serif;
+        font-size: clamp(2rem, 5vw, 2.8rem);
+        font-weight: 400;
+        line-height: 1.15;
+        letter-spacing: -0.01em;
+        color: var(--ink);
+        margin-bottom: 1.5rem;
+      }
+
+      .meta-row {
+        display: flex;
+        gap: 2rem;
+        font-size: 0.8rem;
+        color: var(--ink-light);
+        font-weight: 400;
+      }
+
+      .meta-row span::before {
+        content: "";
+        display: inline-block;
+        width: 4px;
+        height: 4px;
+        background: var(--accent);
+        border-radius: 50%;
+        margin-right: 0.5rem;
+        vertical-align: middle;
+      }
+
+      .toc {
+        background: var(--accent-light);
+        border-left: 3px solid var(--accent);
+        padding: 1.5rem 2rem;
+        margin-bottom: 3.5rem;
+        border-radius: 0 4px 4px 0;
+      }
+
+      .toc-title {
+        font-size: 0.7rem;
+        font-weight: 500;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: var(--accent);
+        margin-bottom: 0.8rem;
+      }
+
+      .toc ol {
+        list-style: none;
+        counter-reset: toc;
+      }
+
+      .toc li {
+        counter-increment: toc;
+        font-size: 0.875rem;
+        line-height: 1.9;
+        color: var(--ink-mid);
+      }
+
+      .toc li::before {
+        content: counter(toc) ". ";
+        color: var(--accent);
+        font-weight: 500;
+      }
+
+      section {
+        margin-bottom: 3rem;
+      }
+
+      h2 {
+        font-family: "Playfair Display", Georgia, serif;
+        font-size: 1.3rem;
+        font-weight: 400;
+        color: var(--ink);
+        margin-bottom: 1rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 1px solid var(--rule);
+        display: flex;
+        align-items: baseline;
+        gap: 0.75rem;
+      }
+
+      .section-num {
+        font-family: "DM Sans", sans-serif;
+        font-size: 0.7rem;
+        font-weight: 500;
+        color: var(--accent);
+        letter-spacing: 0.08em;
+        background: var(--accent-light);
+        padding: 0.15rem 0.5rem;
+        border-radius: 3px;
+        flex-shrink: 0;
+      }
+
+      p {
+        font-size: 0.9375rem;
+        color: var(--ink-mid);
+        margin-bottom: 1rem;
+      }
+
+      ul {
+        margin: 0.5rem 0 1rem 0;
+        padding-left: 0;
+        list-style: none;
+      }
+
+      li {
+        font-size: 0.9375rem;
+        color: var(--ink-mid);
+        padding: 0.3rem 0 0.3rem 1.4rem;
+        position: relative;
+      }
+
+      li::before {
+        content: "—";
+        position: absolute;
+        left: 0;
+        color: var(--accent);
+        font-weight: 400;
+      }
+
+      .contact-block {
+        background: white;
+        border: 1px solid var(--rule);
+        border-radius: 6px;
+        padding: 1.5rem 2rem;
+        margin-top: 1rem;
+      }
+
+      .contact-block .contact-label {
+        font-size: 0.7rem;
+        font-weight: 500;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: var(--ink-light);
+        margin-bottom: 0.5rem;
+      }
+
+      .contact-block a {
+        color: var(--accent);
+        text-decoration: none;
+        font-weight: 400;
+        font-size: 1rem;
+      }
+
+      .contact-block a:hover {
+        text-decoration: underline;
+      }
+
+      .note {
+        font-size: 0.8rem;
+        color: var(--ink-light);
+        font-style: italic;
+        margin-top: 0.5rem;
+      }
+
+      footer {
+        margin-top: 5rem;
+        padding-top: 2rem;
+        border-top: 1px solid var(--rule);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+      }
+
+      footer p {
+        font-size: 0.78rem;
+        color: var(--ink-light);
+        margin: 0;
+      }
+
+      .version-badge {
+        font-size: 0.7rem;
+        background: var(--accent-light);
+        color: var(--accent);
+        padding: 0.25rem 0.75rem;
+        border-radius: 20px;
+        font-weight: 500;
+        letter-spacing: 0.05em;
+      }
+
+      @media (max-width: 540px) {
+        .meta-row {
+          flex-direction: column;
+          gap: 0.4rem;
+        }
+        footer {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <header>
+        <div class="label">Legal · Privacy</div>
+        <h1>Privacy Policy</h1>
+        <div class="meta-row">
+          <span>Effective: 2026-04-19</span>
+          <span>Last updated: 2026-04-19</span>
+        </div>
+      </header>
+
+      <div class="toc">
+        <div class="toc-title">Contents</div>
+        <ol>
+          <li>Who we are</li>
+          <li>What information we process</li>
+          <li>Why we process it and the legal basis</li>
+          <li>How we store and protect data</li>
+          <li>Sub-processors and third-party services</li>
+          <li>Data subject rights and deletion requests</li>
+          <li>Changes to this policy</li>
+          <li>Contact us</li>
+        </ol>
+      </div>
+
+      <section id="s1">
+        <h2><span class="section-num">01</span> Who we are</h2>
+        <p>
+          <strong>Andrzej Niedziółka ANSOFT</strong> ("we", "us", or "our") is a
+          marketing automation and data integration service provider. We build
+          and operate automated workflows that retrieve lead data from Meta's
+          Lead Ads platform on behalf of our business clients, and deliver that
+          data to client-owned storage systems such as Google Sheets.
+        </p>
+        <p>
+          In this context we act as a <strong>data processor</strong> — we
+          handle personal data solely on the instructions of our clients, who
+          are the data controllers responsible for how that data is ultimately
+          used. This policy describes our processing activities, the safeguards
+          we apply, and how data subjects may exercise their rights.
+        </p>
+      </section>
+
+      <section id="s2">
+        <h2><span class="section-num">02</span> What information we process</h2>
+        <p>
+          In the course of providing our services, we process personal data that
+          individuals have submitted to our clients via Meta Lead Ad forms. This
+          data is provided to us by Meta's Lead Ads API and typically includes:
+        </p>
+        <ul>
+          <li>Full name</li>
+          <li>Email address</li>
+          <li>Phone number</li>
+          <li>
+            Any additional fields included in the client's specific lead form
+            (e.g. area of interest, message, or preferred contact time)
+          </li>
+        </ul>
+        <p>
+          We do not independently collect data from individuals, run our own
+          advertising campaigns, or enrich the data beyond what is provided by
+          the API. We do not process sensitive categories of personal data.
+        </p>
+      </section>
+
+      <section id="s3">
+        <h2>
+          <span class="section-num">03</span> Why we process it and the legal
+          basis
+        </h2>
+        <p>
+          We process lead data for a single operational purpose: to transfer it
+          from Meta's platform into the storage system designated by our client.
+          This is a pure logistics function — we do not analyse, profile, or
+          make decisions based on the data, and we do not retain it beyond what
+          is technically necessary to complete the transfer.
+        </p>
+        <p>
+          Our legal basis for processing is the performance of a contract with
+          our business client, who has in turn obtained consent from the
+          individuals submitting the lead form at the point of submission on
+          Meta's platform.
+        </p>
+      </section>
+
+      <section id="s4">
+        <h2>
+          <span class="section-num">04</span> How we store and protect data
+        </h2>
+        <p>
+          Data passes through our automated workflow infrastructure transiently
+          and is written directly to the client's designated Google Sheet. We do
+          not maintain a separate database or long-term copy of lead records.
+          Workflow logs that may temporarily contain personal data are retained
+          for no longer than 30 days and are accessible only to authorised
+          personnel.
+        </p>
+        <p>
+          We apply appropriate technical and organisational measures to protect
+          data in transit and at rest, including access controls and encrypted
+          connections between all services involved in the transfer.
+        </p>
+      </section>
+
+      <section id="s5">
+        <h2>
+          <span class="section-num">05</span> Sub-processors and third-party
+          services
+        </h2>
+        <p>
+          To deliver our service we rely on the following sub-processors, each
+          of whom handles data under their own privacy and security commitments:
+        </p>
+        <ul>
+          <li>
+            <strong>Meta Platforms, Inc.</strong> — source of lead data via the
+            Lead Ads API
+          </li>
+          <li>
+            <strong>Google LLC</strong> — destination storage via Google Sheets,
+            owned and controlled by our client
+          </li>
+          <li>
+            <strong>n8n GmbH</strong> — workflow automation infrastructure used
+            to orchestrate the data transfer
+          </li>
+        </ul>
+        <p>
+          We do not sell, share, or disclose lead data to any party other than
+          the client who instructed us to retrieve it. We may disclose data if
+          required by applicable law or a valid legal order.
+        </p>
+      </section>
+
+      <section id="s6">
+        <h2>
+          <span class="section-num">06</span> Data subject rights and deletion
+          requests
+        </h2>
+        <p>
+          Individuals whose data has been collected via a Meta Lead Ad form may
+          have rights under applicable data protection law, including the right
+          to access, correct, or delete their personal data.
+        </p>
+        <p>
+          Because we act as a processor rather than a controller, the primary
+          point of contact for exercising these rights is the business that ran
+          the advertisement. However, if you are unable to reach them or wish to
+          contact us directly, we will forward your request to the relevant
+          client and confirm deletion from any systems we control within 30
+          days.
+        </p>
+        <div class="contact-block">
+          <div class="contact-label">Submit a data or deletion request</div>
+          <a href="mailto:[default.catching219@passinbox.com]"
+            >[default.catching219@passinbox.com]</a
+          >
+          <p class="note">
+            Please include the name and email address submitted in the original
+            form so we can locate the relevant record.
+          </p>
+        </div>
+      </section>
+
+      <section id="s7">
+        <h2><span class="section-num">07</span> Changes to this policy</h2>
+        <p>
+          We may update this policy as our services or legal obligations change.
+          Material updates will be reflected in the "last updated" date above.
+          We encourage clients and interested parties to review this page
+          periodically.
+        </p>
+      </section>
+
+      <section id="s8">
+        <h2><span class="section-num">08</span> Contact us</h2>
+        <p>
+          For questions about this policy or our data processing practices,
+          please contact:
+        </p>
+        <div class="contact-block">
+          <div class="contact-label">Data processor</div>
+          <p
+            style="margin-bottom: 0.25rem; color: var(--ink); font-weight: 500"
+          >
+            Andrzej Niedziółka ANSOFT
+          </p>
+          <p style="margin-bottom: 0.25rem">Poland</p>
+          <a href="mailto:[default.catching219@passinbox.com]"
+            >[default.catching219@passinbox.com]</a
+          >
+        </div>
+      </section>
+
+      <footer>
+        <p>Effective date: 2026-04-19 &nbsp;·&nbsp; Last updated: 2026-04-19</p>
+        <span class="version-badge">v1.0</span>
+      </footer>
+    </div>
+  </body>
+</html>
